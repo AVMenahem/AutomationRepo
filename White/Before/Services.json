@@ -1,0 +1,62 @@
+{
+  "ServersEnum": [
+    {
+      "ServerName": "Server11",
+      "ID": 1
+    },
+    {
+      "ServerName": "Server12",
+      "ID": 2
+    }
+  ],
+  "Services": [
+    {
+      "ServiceName": "BasicServiceName",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "none"
+    },
+    {
+      "ServiceName": "MMM-BUILDER-FILES-FileApp001",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    }
+  ],
+  "QueueBefore": [
+    {
+      "Prefix": "basic",
+      "ID": "12345",
+      "Name": "Basic",
+      "Brokers": "192.1.3.1:9092,192.1.3.2:9092,192.1.3.3:9092"
+    },
+    {
+      "Prefix": "MSG",
+      "ID": "001",
+      "Name": "FileApp001",
+      "Brokers": "193.1.2.1:9092, 193.1.2.2:9092, 193.1.2.3:9092"
+    }
+  ],
+  "QueueAfter": [
+    {
+      "Prefix": "basic",
+      "ID": "12345",
+      "Name": "Basic",
+      "Brokers": "192.1.4.1:9092,192.1.4.2:9092,192.1.4.3:9092"
+    }
+  ],
+  "QueueClean": [
+    {
+      "Prefix": "basic",
+      "ID": "12345",
+      "Name": "Basic",
+      "Brokers": "192.1.5.1:9092,192.1.5.2:9092,192.1.5.3:9092"
+    }
+  ]
+}

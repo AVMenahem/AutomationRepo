@@ -1,0 +1,55 @@
+{
+  "ServersEnum": [
+    {
+      "ServerName": "Server11",
+      "ID": 1
+    },
+    {
+      "ServerName": "Server12",
+      "ID": 2
+    }
+  ],
+  "Services": [
+    {
+      "ServiceName": "BasicServiceName",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "none"
+    },
+    {
+      "ServiceName": "MMM-POLLER-FILES-FileApp001",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-SPLITTER-FILES-FileApp001",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-RATELIMITER-FILES-FileApp001",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    }
+  ],
+  "QueueBefore": [],
+  "QueueAfter": [],
+  "QueueClean": []
+}

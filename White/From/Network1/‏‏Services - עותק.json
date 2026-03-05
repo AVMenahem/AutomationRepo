@@ -1,0 +1,20 @@
+{
+	"ServersEnum":[
+		{
+			"ServerName":"Server11",
+			"ID": 1
+		},
+		{
+			"ServerName":"Server12",
+			"ID": 2
+		}
+	],
+	"Services":[
+		{
+			"ServiceName":"BasicServiceName",
+			"enableServers":[1,2],
+			"disableServers":[],
+			"Action":"none"
+		}
+	]
+}
