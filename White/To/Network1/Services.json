@@ -27,6 +27,15 @@
       ],
       "disableServers": [],
       "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-MSGTransporter-MSG.006.MsgAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
     }
   ],
   "QueueBefore": [],
