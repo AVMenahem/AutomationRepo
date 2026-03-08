@@ -1,0 +1,17 @@
+{
+  "ServersEnum": [],
+  "Services": [
+    {
+      "ServiceName": "MMM-MSGTransporter-MSG.005.MsgAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    }
+  ],
+  "QueueBefore": [],
+  "QueueAfter": [],
+  "QueueClean": []
+}

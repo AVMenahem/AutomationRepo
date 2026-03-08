@@ -67,6 +67,82 @@
         2
       ],
       "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-CCID-MSG.005.MsgAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-RATELIMITER-MSG-MsgAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-CCID-MSG.005.MsgAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-RATELIMITER-MSG-MsgAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-CCID-MSG.005.MsgAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-RATELIMITER-MSG-MsgAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-CCID-MSG.005.MsgAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-RATELIMITER-MSG-MsgAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
     }
   ],
   "QueueBefore": [],
