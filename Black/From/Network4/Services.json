@@ -1,5 +1,14 @@
 {
-  "ServersEnum": [],
+  "ServersEnum": [
+    {
+      "ServerName": "Server11",
+      "ID": 1
+    },
+    {
+      "ServerName": "Server12",
+      "ID": 2
+    }
+  ],
   "Services": [
     {
       "ServiceName": "MMM-POLLER-FILES.003.FileAppTest",
@@ -22,6 +31,35 @@
     },
     {
       "ServiceName": "MMM-RATELIMITER-FILES.003.FileAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-POLLER-FILES.004.FileAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-SPLITTER-FILES.004.FileAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-RATELIMITER-FILES.004.FileAppTest",
       "enableServers": [
         1
       ],

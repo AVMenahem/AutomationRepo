@@ -1,8 +1,26 @@
 {
-  "ServersEnum": [],
+  "ServersEnum": [
+    {
+      "ServerName": "Server11",
+      "ID": 1
+    },
+    {
+      "ServerName": "Server12",
+      "ID": 2
+    }
+  ],
   "Services": [
     {
       "ServiceName": "MMM-SPLITTER-FILES.003.FileAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-SPLITTER-FILES.004.FileAppTest",
       "enableServers": [
         1,
         2
