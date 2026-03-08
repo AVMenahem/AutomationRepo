@@ -1,0 +1,37 @@
+{
+  "ServersEnum": [],
+  "Services": [
+    {
+      "ServiceName": "MMM-POLLER-FILES.003.FileAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-SPLITTER-FILES.003.FileAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-RATELIMITER-FILES.003.FileAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    }
+  ],
+  "QueueBefore": [],
+  "QueueAfter": [],
+  "QueueClean": []
+}

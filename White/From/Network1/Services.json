@@ -76,6 +76,35 @@
         2
       ],
       "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-POLLER-FILES.002.FileAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-SPLITTER-FILES.002.FileAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-RATELIMITER-FILES.002.FileAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
     }
   ],
   "QueueBefore": [],

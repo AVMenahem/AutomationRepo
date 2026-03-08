@@ -1,0 +1,17 @@
+{
+  "ServersEnum": [],
+  "Services": [
+    {
+      "ServiceName": "MMM-SPLITTER-FILES.003.FileAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    }
+  ],
+  "QueueBefore": [],
+  "QueueAfter": [],
+  "QueueClean": []
+}
