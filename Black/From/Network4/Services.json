@@ -162,6 +162,25 @@
         2
       ],
       "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-CCID-MSG.007.MsgAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-RATELIMITER-MSG.007.MsgAppTest",
+      "enableServers": [
+        1
+      ],
+      "disableServers": [
+        2
+      ],
+      "Action": "install"
     }
   ],
   "QueueBefore": [],
