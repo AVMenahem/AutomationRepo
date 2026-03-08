@@ -27,6 +27,15 @@
       ],
       "disableServers": [],
       "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-SPLITTER-FILES.002.FileAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
     }
   ],
   "QueueBefore": [

@@ -27,6 +27,15 @@
       ],
       "disableServers": [],
       "Action": "install"
+    },
+    {
+      "ServiceName": "MMM-BUILDER-FILES.002.FileAppTest",
+      "enableServers": [
+        1,
+        2
+      ],
+      "disableServers": [],
+      "Action": "install"
     }
   ],
   "QueueBefore": [
@@ -56,6 +65,12 @@
       "Prefix": "MSG",
       "ID": "001",
       "Name": "FileApp001",
+      "Brokers": "194.1.2.1:9092, 194.1.2.2:9092, 194.1.2.3:9092"
+    },
+    {
+      "Prefix": "Files",
+      "ID": "002",
+      "Name": "FileAppTest",
       "Brokers": "194.1.2.1:9092, 194.1.2.2:9092, 194.1.2.3:9092"
     }
   ]
