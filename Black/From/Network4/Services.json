@@ -11,17 +11,16 @@
   ],
   "Services": [
     {
-      "ServiceName": "MMM-POLLER-FILES.003.FileAppTest",
+      "ServiceName": "BasicServiceName",
       "enableServers": [
-        1
-      ],
-      "disableServers": [
+        1,
         2
       ],
-      "Action": "install"
+      "disableServers": [],
+      "Action": "none"
     },
     {
-      "ServiceName": "MMM-SPLITTER-FILES.003.FileAppTest",
+      "ServiceName": "MMM-CCID-MSG.010.MsgAppTest",
       "enableServers": [
         1,
         2
@@ -30,27 +29,7 @@
       "Action": "install"
     },
     {
-      "ServiceName": "MMM-RATELIMITER-FILES.003.FileAppTest",
-      "enableServers": [
-        1
-      ],
-      "disableServers": [
-        2
-      ],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-POLLER-FILES.004.FileAppTest",
-      "enableServers": [
-        1
-      ],
-      "disableServers": [
-        2
-      ],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-SPLITTER-FILES.004.FileAppTest",
+      "ServiceName": "MMM-CCID-MSG.011.MsgAppTest",
       "enableServers": [
         1,
         2
@@ -59,7 +38,7 @@
       "Action": "install"
     },
     {
-      "ServiceName": "MMM-RATELIMITER-FILES.004.FileAppTest",
+      "ServiceName": "MMM-RATELIMITER-MSG.011.MsgAppTest",
       "enableServers": [
         1
       ],
@@ -69,7 +48,7 @@
       "Action": "install"
     },
     {
-      "ServiceName": "MMM-CCID-MSG.005.MsgAppTest",
+      "ServiceName": "MMM-CCID-MSG.012.MsgAppTest",
       "enableServers": [
         1,
         2
@@ -78,140 +57,7 @@
       "Action": "install"
     },
     {
-      "ServiceName": "MMM-RATELIMITER-MSG-MsgAppTest",
-      "enableServers": [
-        1
-      ],
-      "disableServers": [
-        2
-      ],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-CCID-MSG.005.MsgAppTest",
-      "enableServers": [
-        1,
-        2
-      ],
-      "disableServers": [],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-RATELIMITER-MSG-MsgAppTest",
-      "enableServers": [
-        1
-      ],
-      "disableServers": [
-        2
-      ],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-CCID-MSG.005.MsgAppTest",
-      "enableServers": [
-        1,
-        2
-      ],
-      "disableServers": [],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-RATELIMITER-MSG-MsgAppTest",
-      "enableServers": [
-        1
-      ],
-      "disableServers": [
-        2
-      ],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-CCID-MSG.005.MsgAppTest",
-      "enableServers": [
-        1,
-        2
-      ],
-      "disableServers": [],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-RATELIMITER-MSG-MsgAppTest",
-      "enableServers": [
-        1
-      ],
-      "disableServers": [
-        2
-      ],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-CCID-MSG.006.MsgAppTest",
-      "enableServers": [
-        1,
-        2
-      ],
-      "disableServers": [],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-RATELIMITER-MSG.006.MsgAppTest",
-      "enableServers": [
-        1
-      ],
-      "disableServers": [
-        2
-      ],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-CCID-MSG.007.MsgAppTest",
-      "enableServers": [
-        1,
-        2
-      ],
-      "disableServers": [],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-RATELIMITER-MSG.007.MsgAppTest",
-      "enableServers": [
-        1
-      ],
-      "disableServers": [
-        2
-      ],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-CCID-MSG.008.MsgAppTest",
-      "enableServers": [
-        1,
-        2
-      ],
-      "disableServers": [],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-RATELIMITER-MSG.008.MsgAppTest",
-      "enableServers": [
-        1
-      ],
-      "disableServers": [
-        2
-      ],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-CCID-MSG.009.MsgAppTest",
-      "enableServers": [
-        1,
-        2
-      ],
-      "disableServers": [],
-      "Action": "install"
-    },
-    {
-      "ServiceName": "MMM-RATELIMITER-MSG.009.MsgAppTest",
+      "ServiceName": "MMM-RATELIMITER-MSG.012.MsgAppTest",
       "enableServers": [
         1
       ],
@@ -221,7 +67,28 @@
       "Action": "install"
     }
   ],
-  "QueueBefore": [],
-  "QueueAfter": [],
-  "QueueClean": []
+  "QueueBefore": [
+    {
+      "Prefix": "basic",
+      "ID": "12345",
+      "Name": "Basic",
+      "Brokers": "192.1.3.1:9092,192.1.3.2:9092,192.1.3.3:9092"
+    }
+  ],
+  "QueueAfter": [
+    {
+      "Prefix": "basic",
+      "ID": "12345",
+      "Name": "Basic",
+      "Brokers": "192.1.4.1:9092,192.1.4.2:9092,192.1.4.3:9092"
+    }
+  ],
+  "QueueClean": [
+    {
+      "Prefix": "basic",
+      "ID": "12345",
+      "Name": "Basic",
+      "Brokers": "192.1.5.1:9092,192.1.5.2:9092,192.1.5.3:9092"
+    }
+  ]
 }
